@@ -1,0 +1,15 @@
+2025-02-11 10:46:00.893006+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARDS" not found (this database is empty); SQL statement:
+INSERT INTO CARDS (customer_id, card_number, card_type, total_limit, amount_used, available_amount, create_dt) VALUES (1, '1234-5678-9012-3456', 'CREDIT', 5000, 1500, 3500, CURRENT_DATE) [42104-232]
+2025-02-11 10:59:50.622657+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La table "CARDS" existe déjà
+Table "CARDS" already exists; SQL statement:
+CREATE TABLE CARDS ( card_id INT AUTO_INCREMENT PRIMARY KEY, customer_id INT, card_number VARCHAR(20), card_type VARCHAR(10), total_limit INT, amount_used INT, available_amount INT, create_dt TIMESTAMP ) [42101-232]
+2025-02-11 11:01:28.867673+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La table "CARDS" existe déjà
+Table "CARDS" already exists; SQL statement:
+CREATE TABLE CARDS ( card_id INT AUTO_INCREMENT PRIMARY KEY, customer_id INT, card_number VARCHAR(20), card_type VARCHAR(10), total_limit INT, amount_used INT, available_amount INT, create_dt TIMESTAMP ) [42101-232]
+2025-02-11 11:01:45.682043+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La table "CARDS" existe déjà
+Table "CARDS" already exists; SQL statement:
+CREATE TABLE CARDS ( card_id INT AUTO_INCREMENT PRIMARY KEY, customer_id INT, card_number VARCHAR(20), card_type VARCHAR(10), total_limit INT, amount_used INT, available_amount INT, create_dt TIMESTAMP ) [42101-232]

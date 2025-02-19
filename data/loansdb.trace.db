@@ -1,0 +1,180 @@
+2025-02-13 15:15:07.523434+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:15:07.524472+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:16:46.472253+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "SELECT * FROM LOAN LOAN [*]LOAN LOAN"
+Syntax error in SQL statement "SELECT * FROM LOAN LOAN [*]LOAN LOAN"; SQL statement:
+SELECT * FROM LOAN LOAN LOAN LOAN [42000-232]
+2025-02-13 15:17:14.508521+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:17:14.508521+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:17:33.535740+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:17:33.536728+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""CUSTOMER_ID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:17:43.687038+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Impossible d'analyser "TIMESTAMP" constante "5"
+Cannot parse "TIMESTAMP" constant "5"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22007-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:88)
+	at org.h2.value.Value.convertToTimestamp(Value.java:2006)
+	at org.h2.value.Value.convertTo(Value.java:1179)
+	at org.h2.value.Value.convertForAssignTo(Value.java:1118)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:406)
+	at org.h2.table.Table.convertInsertRow(Table.java:963)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.h2.result.UpdatableRow.insertRow(UpdatableRow.java:334)
+	at org.h2.jdbc.JdbcResultSet.insertRow(JdbcResultSet.java:3335)
+	at org.h2.server.web.WebApp.editResult(WebApp.java:1164)
+	at org.h2.server.web.WebApp.process(WebApp.java:250)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: 5
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:187)
+	at org.h2.util.DateTimeUtils.parseTimestamp(DateTimeUtils.java:338)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:86)
+	... 55 more
+2025-02-13 15:17:43.689164+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Impossible d'analyser "TIMESTAMP" constante "5"
+Cannot parse "TIMESTAMP" constant "5"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22007-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:88)
+	at org.h2.value.Value.convertToTimestamp(Value.java:2006)
+	at org.h2.value.Value.convertTo(Value.java:1179)
+	at org.h2.value.Value.convertForAssignTo(Value.java:1118)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:406)
+	at org.h2.table.Table.convertInsertRow(Table.java:963)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at org.h2.result.UpdatableRow.insertRow(UpdatableRow.java:334)
+	at org.h2.jdbc.JdbcResultSet.insertRow(JdbcResultSet.java:3335)
+	at org.h2.server.web.WebApp.editResult(WebApp.java:1164)
+	at org.h2.server.web.WebApp.process(WebApp.java:250)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
+	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.lang.IllegalArgumentException: 5
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:187)
+	at org.h2.util.DateTimeUtils.parseTimestamp(DateTimeUtils.java:338)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:86)
+	... 55 more
+2025-02-13 15:19:30.229230+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:19:30.229230+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"
+Data conversion error converting "'' (LOAN: ""AMOUNT_PAID"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:55:50.146459+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""LOAN_NUMBER"" INTEGER GENERATED BY DEFAULT AS IDENTITY(START WITH 1 RESTART WITH 2) NOT NULL)"
+Data conversion error converting "'' (LOAN: ""LOAN_NUMBER"" INTEGER GENERATED BY DEFAULT AS IDENTITY(START WITH 1 RESTART WITH 2) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
+2025-02-13 15:55:50.149462+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'' (LOAN: ""LOAN_NUMBER"" INTEGER GENERATED BY DEFAULT AS IDENTITY(START WITH 1 RESTART WITH 2) NOT NULL)"
+Data conversion error converting "'' (LOAN: ""LOAN_NUMBER"" INTEGER GENERATED BY DEFAULT AS IDENTITY(START WITH 1 RESTART WITH 2) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."LOAN"("AMOUNT_PAID","CUSTOMER_ID","LOAN_NUMBER","OUTSTANDING_AMOUNT","TOTAL_LOAN","START_DT","CREATE_DT","LOAN_TYPE")VALUES(?,?,?,?,?,?,?,?) [22018-232]
