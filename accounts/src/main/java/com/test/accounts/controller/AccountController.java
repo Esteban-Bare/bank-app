@@ -75,4 +75,9 @@ public class AccountController {
     public String jacues() {
         return "Jacques";
     }
+
+    @PostMapping("/noann")
+    public String noann() {
+        return "Noann";
+    }
 }
