@@ -73,7 +73,7 @@ public class AccountController {
 
     @PostMapping("/jacques")
     public String jacues() {
-        return "Jacques";
+        return "Jacs";
     }
 
     @PostMapping("/noann")
