@@ -1,6 +1,8 @@
 package com.test.cards.controller;
 
+import com.test.cards.model.CardIdDto;
 import com.test.cards.model.Cards;
+import com.test.cards.model.CustomerIdDto;
 import com.test.cards.repository.CardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,10 +16,17 @@ public class CardController {
     private CardRepository cardRepository;
 
     @PostMapping("/getCardDetails")
-    public Cards getCardDetails(@RequestBody Integer customerId) {
-        return cardRepository.findById(customerId).orElse(null);
+    public Cards getCardDetails(@RequestBody CardIdDto cardId) {
+        return cardRepository.findById(cardId.getCardId()).orElse(null);
         // Get card details
     }
+
+    @PostMapping("/getAllCardsByCustomerId")
+    public List<Cards> getAllCardsByCustomerId(@RequestBody CustomerIdDto customerIdDto) {
+        return cardRepository.findAllByCustomerId(customerIdDto.getCustomerId());
+        // Get all cards by customer ID
+    }
+
 
     @GetMapping("/getAllCards")
     public List<Cards> getAllCards() {
@@ -29,6 +38,7 @@ public class CardController {
     public void addCard(@RequestBody Cards card) {
         cardRepository.save(card);
         // Add a new card
+        //
     }
 
     @PutMapping("/updateCard")

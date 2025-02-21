@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
-        <module name="loans" />
         <module name="accounts" />
+        <module name="loans" />
+        <module name="discovery" />
       </profile>
       <profile name="Annotation profile for cards" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -31,6 +32,7 @@
       <module name="cards" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="coonfigServer" options="-parameters" />
+      <module name="discovery" options="-parameters" />
       <module name="loans" options="-parameters" />
     </option>
   </component>
