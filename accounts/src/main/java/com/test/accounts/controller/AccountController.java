@@ -70,14 +70,4 @@ public class AccountController {
         List<Loan> loans = loansFeignClient.getLoanByCustomer(customerIdDto);
         return new CustomerDetails(accounts, cards, loans);
     }
-
-    @PostMapping("/jacques")
-    public String jacues() {
-        return "Jacs";
-    }
-
-    @PostMapping("/noann")
-    public String noann() {
-        return "Noann";
-    }
 }
